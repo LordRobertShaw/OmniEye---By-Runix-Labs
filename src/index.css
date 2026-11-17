@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+/* ==========================================
+   PITCH BLACK AESTHETIC OVERRIDES (#000000)
+   ========================================== */
+body, 
+html,
+#root {
+  background-color: #000000 !important;
+}
+
+/* Seamless override for all dark background utility classes */
+[class*="bg-[#0"],
+[class*="bg-[#1"],
+[class*="bg-zinc-950"],
+[class*="bg-zinc-900"],
+[class*="bg-zinc-800"],
+[class*="bg-slate-950"],
+[class*="bg-slate-900"],
+[class*="bg-slate-800"],
+[class*="bg-neutral-"],
+[class*="bg-black/"],
+.bg-black,
+.bg-zinc-950,
+.bg-zinc-900,
+.bg-[#000000] {
+  background-color: #000000 !important;
+}
+
+/* Specific overrides targeting inputs, textareas, code fragments, selects, options, and dialogs */
+input, 
+textarea, 
+select, 
+option, 
+pre, 
+code,
+input[type="text"],
+input[type="password"],
+input[type="search"] {
+  background-color: #000000 !important;
+}
+
+/* Modals, popups, and floating overlays */
+dialog,
+.modal,
+[role="dialog"],
+.dropdown-menu,
+.popover {
+  background-color: #000000 !important;
+}
+
+/* Custom terminal scanline & subtle scrollbar enhancements */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  background: #000000 !important;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000 !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1f1f23;
+  border-radius: 3px;
+  border: 1px solid #000000;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2d2d34;
+}
+
+/* ==========================================
+   BATTERY < 20% ECO-POWER ENERGY SAVER MODE
+   ========================================== */
+.eco-power-mode {
+  filter: brightness(0.76) saturate(0.68) contrast(0.96);
+  transition: filter 300ms ease;
+}
+
+.eco-power-mode *,
+.eco-power-mode *::before,
+.eco-power-mode *::after {
+  animation-play-state: paused !important;
+  transition-duration: 0ms !important;
+}

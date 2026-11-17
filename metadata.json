@@ -1,0 +1,6 @@
+{
+  "name": "OmniEye",
+  "description": "An interactive agent and workbench to optimize, compress, and secure video feeds, featuring 8-digit alphanumeric PIN protection, standard container packaging, and secure WireGuard/Tailscale telemetry tunnels for Daemon Systemology ingestion.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
